@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pet shop Aurora</title>
+        <!-- Acessando o estilo CSS da página e o ícone -->
+        <link rel="stylesheet" href="style-pagina-inicial.css">
+        <link rel="icon" type="image/png" href="icone-pet-shop.jpg">
+    </head>
+    <body>
+        <!-- Importando a função temporal, que exibe um pop-up em casos de inatividade -->
+        <script src="funções.js"></script>
+
+        <script>
+            // Chamando a função
+            iniciarTemporizadorInatividade();
+        </script>
+        <header>
+            <h1>Pet shop Aurora</h1>
+        </header>
+        <nav>
+            <!-- Navegação entre as abas -->
+            <a href="pagina_incial.html">Início</a>
+            <a href="pagina_produtos.html">Produtos</a>
+            <a href="pagina_servicos.html">Serviços</a>
+        </nav>
+        <!-- Definição de tudo que é solicitado no formulário -->
+        <section>
+                <!-- Manda o formulario preenchido para o email -->
+                <form action="https://formsubmit.co/alancouto300@gmail.com" method="post" >
+                    
+                        <div class="form-group">
+                            <label for="nomeCompleto">Nome Completo:</label>
+                            <input type="text" id="nomeCompleto" name="nomeCompleto" required>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="cpf">CPF:</label>
+                            <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Informe um CPF válido" placeholder="xxx.xxx.xxx-xx" required>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="dataNascimento">Data de Nascimento:</label>
+                            <input type="date" id="dataNascimento" name="dataNascimento" required>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="cidade">Cidade:</label>
+                            <input type="text" id="cidade" name="cidade" required>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="telefoneFixo">Telefone Fixo:</label>
+                            <input type="text" id="telefoneFixo" name="telefoneFixo" pattern="[0-9]*" placeholder="9 digitos">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="telefone">Telefone:</label>
+                            <input type="text" id="telefone" name="telefone" pattern="[0-9]*" placeholder="9 digitos" required>
+                        </div>
+        
+                        <div class="form-group">
+                            <label>Animais que possui:</label>
+                            <div class="animal-group">
+                                <input type="checkbox" id="gato" name="gato">
+                                <label for="gato">Gato</label>
+                                <input type="number" id="numeroGatos" name="numeroGatos" placeholder="Número de Gatos" min="0">
+        
+                                <input type="checkbox" id="cachorro" name="cachorro">
+                                <label for="cachorro">Cachorro</label>
+                                <input type="number" id="numeroCachorros" name="numeroCachorros" placeholder="Número de Cachorros" min="0">
+        
+                                <input type="checkbox" id="outros" name="outros">
+                                <label for="outros">Outros</label>
+                                <input type="number" id="numeroOutros" name="numeroOutros" placeholder="Número de outros pets" min="0">
+                            </div>
+                        </div>
+                    
+        
+                        <div class="pet-cadastro">
+                            <h2>Cadastro de Pets</h2>
+        
+                            <div class="form-group">
+                                <label for="nomePet">Nome do Pet:</label>
+                                <input type="text" id="nomePet" name="nomePet" required>
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="idadePet">Idade do Pet:</label>
+                                <input type="number" id="idadePet" name="idadePet" min="1" required>
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="temperamentoPet">Temperamento:</label>
+                                <select id="temperamentoPet" name="temperamentoPet" required>
+                                    <option value="calmo">Calmo</option>
+                                    <option value="agitado">Agitado</option>
+                                    <option value="irritado">Irritado</option>
+                                </select>
+                            </div>
+        
+                            <div class="form-group" required>
+                                <label>Tipo de Pet:</label>
+                                <input type="radio" id="pequeno" name="tipoPet" value="pequeno">
+                                <label for="pequeno">Pequeno</label>
+
+                                <input type="radio" id="medio" name="tipoPet" value="medio">
+                                <label for="medio">Médio</label>
+
+                                <input type="radio" id="grande" name="tipoPet" value="grande">
+                                <label for="grande">Grande</label>
+                                </select>
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="racaPet">Raça do Pet:</label>
+                                <input type="text" id="racaPet" name="racaPet" required>
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="alergiasPet">Alergias:</label>
+                                <textarea id="alergiasPet" name="alergiasPet" rows="4" 
+                                placeholder="Caso tenha alergias informe aqui"></textarea>
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="avisoPet">Aviso:</label>
+                                <textarea id="avisoPet" name="avisoPet" rows="4"
+                                placeholder="Informações adicionais sobre os pets devem ser inseridas aqui"></textarea>
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="servicoDesejado">Serviço Desejado:</label>
+                                <select id="servicoDesejado" name="servicoDesejado" required>
+                                    <option value="banho">Banho</option>
+                                    <option value="tosa">Tosa</option>
+                                    <option value="banho_tosa">Banho e Tosa</option>
+                                </select>
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="dataHora">Data e Hora:</label>
+                                <input type="datetime-local" id="dataHora" name="dataHora" required>
+                            </div>
+                        </div>
+        
+                        <!-- Botão para submeter o formulário para o email-->
+                        <button type="submit">Enviar</button>
+                    
+            </form>
+        </section>
+        <!-- Roda-pé da página -->
+        <footer>
+            <div class="footer-content">
+                <div>
+                    <h4>Contato</h4>
+                    <p>Endereço: Rua zezinho, 123</p>
+                    <p>CNPJ: 35.378.433/0001-90</p>
+                </div>
+                <div>
+                    <h4>Entre em Contato</h4>
+                    <p>Telefone: (12) 1111-1111</p>
+                    <p>E-mail: petshopAurora@petshop.com</p>
+                </div>
+            </div>
+        </footer>
+        
+    </body>
+</html>

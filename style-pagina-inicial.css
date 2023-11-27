@@ -1,0 +1,231 @@
+/* Define o estilo do corpo da página */
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: #f4f4f4;
+    position: relative;
+    min-height: 100vh;  
+}
+/* Adiciona espaço para não ter sobreposição com o rodapé */
+.content-wrapper {
+    flex: 1;
+    padding-bottom: 120px;
+}
+/* Posicionamente e cor do cabeçalho da página */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+/* Define o estilo da navegação da página */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #4CAF50;
+    padding: 10px 0;
+}
+/* Definição do estilo do itens que compõe o menu navegação */
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+/* Definição do estilo do itens que compõe o menu navegação */
+nav a:hover {
+    background-color: #45a049;
+}
+/* Definição para posicionar a imagens da tela inicial que compõe o carrosel */
+.inicial {
+    padding: 20px;
+    margin: 20px;
+}
+/* Cor do texto que está contido no carrosel */
+.carousel-caption.d-md-block {
+    color: black;
+}
+/* posicionamento dos itens a venda na loja e das imagens do menu incial em relação a pagina  */
+.titulo, .exibi_produtos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/* Define o posicionamento e o designer dos itens a venda na página de produtos*/
+.ração1, .ração2 {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    max-width: 250px;
+    margin: 10px;
+}
+
+/* Define a exibição dos produtos na respectiva página do item */
+.exibi_produtos {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 250px;
+    text-align: center;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+/* Posciona e faz a estilização do texto de apresentação dos serviços na página de serviços */
+.texto_servicos {
+    border: 1px solid #5f5d5d;
+    border-radius: 5px;
+    padding: 20px; 
+    max-width: 400px; 
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start; 
+    justify-content: center; 
+}
+
+
+/* Estilização do botão de compras na página que mostra todos os itens disponíveis para venda */
+.botao_compra {
+    display: block;
+    width: 100px;
+    text-align: center;
+    padding: 8px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+/* Muda a cor do botão de compra na página de vendas quando estiver com o mouse em cima */
+.botao_compra:hover {
+    background-color: #45a049;
+}
+
+/* estilização e posicionamento do botão formulário de cadastro na página de serviços  */
+.botao_cadastro {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    padding: 8px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    margin: 10px auto;
+    
+}
+/* Deixando o texto do botão branco */
+.botao_cadastro a {
+    text-decoration: none; 
+    color: white;
+}
+/* Muda a cor do botão formulário de cadastro na página de serviços quando estiver com o mouse em cima */
+.botao_cadastro:hover {
+    background-color: #45a049;
+}
+/* Posicionamento do botão formulário de cadastro na página de serviços */
+.botao_formulario {
+    display: flex;
+    justify-content: center;
+}
+
+/* Posicionamento e tamanho das página dos itens vendidos nas página de produtos */
+.ração1 img, .ração2 img {
+    text-align: center;
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/* estilização do roda-pé */
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+/* posiciona os textos contidos no roda-pé */
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Responsável por posicionar o roda no final da página de serviços */
+.footer-content div {
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+/* Posicionamento dos titulos com h4 */
+h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Definição e estilização do formulário acessado pelo o botão na página de serviços */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Posicionamento dos itens do formulário na página */
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+/* Posicionamento os bloco que deve ser preenchidos ao lado da página do formulário */
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* posiciona os campos de preenchimento e os nomes dos campos da página de formuário */
+.form-group label,
+.form-group input {
+    flex: 1;
+}
+
+/* Posicionamento do item "Animais que possui:" na página do formulário */
+.animal-group {
+    display: flex;
+    align-items: center;
+}
+
+/* Posicionamento do campo de preenchimento de  "Animais que possui:" na página do formulário */
+.animal-group label {
+    margin-right: 10px;
+}
+
+/* Estilização e posicionamento do botão que submete o formulário */
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+    cursor: pointer;
+    font-size: 16px; 
+}
+/* Cor do botão que submete o formulário */
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <!-- Importação do bootstrap para criar o carrosel de imagens -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <meta charset="UTF-8">
+        <title>Pet shop Aurora</title>
+        <!-- Importação da estilização da página -->
+        <link rel="stylesheet" href="style-pagina-inicial.css">
+        <!-- Icone da página -->
+        <link rel="icon" type="image/png" href="icone-pet-shop.jpg">
+    </head>
+    <body>
+        <header>
+            <h1>Pet shop Aurora</h1>
+        </header>
+        <!-- Aba de navegação entre as páginas -->
+        <nav>
+            <a href="pagina_produtos.html">Produtos</a>
+            <a href="pagina_servicos.html">Serviços</a>
+        </nav>
+        <section class="inicial">
+            <h2 class="titulo">Conheça um pouco do nosso trabalho</h2>
+            
+            <!-- Carrosel de imagens com uma descrição  -->
+            <div id="meuCarrossel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="hora-do-banho.jpg" class="d-block w-100" alt="Nada como um banho gostoso">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Dia de banho não é apenas no sábado</h3>
+                            <p>No pet shop Aurora banho é sagrado, então não espera até sábado para trazer o seu pet. Confira já os horários disponíveis.
+                                Em nossos trabalhos de banho e tosa levamos em consideração acima de tudo a integridade do seu pet, pois muitos animais
+                                podem ficar ansiosos ou irritados durante o atendimento, por conta disso adotamos metódos para que o seu pet se sinta confortável
+                                com o nosso banhista, e só após isso realizamos os procedimentos.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="hora-do-rango.jpg" class="d-block w-100" alt="Nada como uma ração de lamber o beiço">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>É hora do rango!</h3>
+                            <p>Trabalhamos apenas com rações de extrema qualidade, assim podendo auxiliar ainda mais no cuidado do seu pet, afinal de conta
+                                o mercado está repeto de rações que não possui os nutrientes e vitaminas necessários para manter o seu pet saúdavel.
+                                Mas aqui no pet shop Aurora isso muda, a saúde do seu pet está sempre em primeiro lugar.</p>
+                        </div>
+                    </div>
+                <!-- Botão de navegação entre as imagens do carrosel -->
+                </div>
+                <a class="carousel-control-prev" href="#meuCarrossel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#meuCarrossel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+        </section>
+        <!-- Roda-pé da página -->
+        <footer>
+            <div class="footer-content">
+                <div>
+                    <h4>Contato</h4>
+                    <p>Endereço: Rua zezinho, 123</p>
+                    <p>CNPJ: 35.378.433/0001-90</p>
+                </div>
+                <div>
+                    <h4>Entre em Contato</h4>
+                    <p>Telefone: (12) 1111-1111</p>
+                    <p>E-mail: petshopAurora@petshop.com</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Incluindo as bibliotecas jQuery, Popper.js, Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
